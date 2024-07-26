@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f1aad9;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            float: left;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(241, 91, 204);
+            color: black;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: left;">Henisha Kakaiya</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            {{#navLink "/"}}Home{{/navLink}}
+            {{#navLink "/about"}}About{{/navLink}}
+            {{#navLink "/htmlDemo"}}HTML Demo{{/navLink}}
+            {{#navLink "/students/add"}}Add Student{{/navLink}}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/students">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/courses">Courses</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        {{{body}}}
+    </section>
+    <footer>
+        <p>&copy; 2024 Henisha Kakaiya</p>
+    </footer>
+</body>
+</html>

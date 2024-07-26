@@ -1,0 +1,152 @@
+/* public/css/theme.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( to bottom, #f2f2f4, #f075d8);
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ecbfdf;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: rgb(246, 212, 244);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: rgb(246, 212, 244);
+    color: white;
+}
+
+section {
+    padding: 2rem;
+    color: #333;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ecbfdf;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Additional styles */
+button.btn-primary {
+    background: linear-gradient(45deg, #f0d7ee, #efa8ea);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background: linear-gradient(45deg, #ee7db2, #e46191);
+}
+
+/* Form styles */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #f0afd7;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+input.form-control, select.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input.form-control:focus, select.form-control:focus {
+    border-color: #d67199;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Add hover effect to submit button */
+input[type="submit"] {
+    background: linear-gradient(45deg, #f384a7, #ef6d98);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #ec6c9f, #f09acb);
+}
